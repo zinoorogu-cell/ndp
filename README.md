@@ -1,119 +1,89 @@
-# Nile Distribution Platform (NDP)
+# 🎬 Nile Distribution Platform (NDP) v2
 
-> The Operating System for Film Distribution in Africa
+> **The Operating System for Film Distribution in Africa**  
+> Powered by Nile Media Entertainment Group
 
-Built by Nile Entertainment Group.
+---
 
-## Tech Stack
-
-- **Framework**: Next.js 14 (App Router)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Fonts**: DM Sans + Syne (Google Fonts)
-- **Deployment**: Vercel-ready
-
-## Getting Started
-
-### 1. Install dependencies
+## 🚀 Quick Start (Local)
 
 ```bash
 npm install
-```
-
-### 2. Run locally
-
-```bash
 npm run dev
+# Open http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000)
-
-### 3. Build for production
+## ☁️ Deploy to Vercel
 
 ```bash
-npm run build
-npm start
+# 1. Push to GitHub
+git init && git add . && git commit -m "NDP Platform v2"
+git remote add origin https://github.com/YOUR_USERNAME/ndp-platform.git
+git push -u origin main
+
+# 2. Go to vercel.com → New Project → Import repo → Deploy
 ```
 
-## Deploy to Vercel
+---
 
-### Option A — Vercel CLI
+## 👥 Demo Roles (P/C/A buttons, bottom-right)
 
-```bash
-npm i -g vercel
-vercel
-```
+| Button | Role | User |
+|--------|------|------|
+| **P** | Producer | Funke Akindele |
+| **C** | Cinema Manager | Amina Bello |
+| **A** | Admin | Moses Babatope |
 
-### Option B — GitHub Import
+---
 
-1. Push this repo to GitHub
-2. Go to [vercel.com/new](https://vercel.com/new)
-3. Import your repository
-4. Click **Deploy** — Vercel auto-detects Next.js
+## 🎬 Featured Films — Funke Akindele Network
 
-No environment variables required for the demo.
+| Film | Genre | GBO | Admissions |
+|------|-------|-----|------------|
+| Omo Ghetto: The Saga | Action Comedy | ₦1.1B | 201,604 |
+| Behind The Scenes | Drama | ₦2.1B | 401,604 |
+| Everybody Loves Jenifa | Comedy Drama | ₦1.8B | 251,604 |
 
-## Project Structure
+---
+
+## ✨ What's New in v2
+
+- **Nile branding** — custom Nile logo with wave motif
+- **Real Funke Akindele films** — accurate GBO, admissions, cast & synopsis
+- **Submit a Film** — 4-step form matching ogr.ng/nileerp/submit-a-film/
+- **Finance Tab** — completed film revenue split: Cinema 50% / Producer 35% / Nile 15%
+- **Updated How It Works** — 4 steps including Admin + Cinema confirmation
+- **Live ticker** — real-time box office from Nigerian cities + Accra
+
+---
+
+## 📁 Project Structure
 
 ```
 ndp-platform/
 ├── app/
-│   ├── globals.css          # Global styles + Tailwind
-│   ├── layout.tsx           # Root layout + metadata
-│   └── page.tsx             # Entry point → NDPApp
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
 ├── components/
-│   ├── NDPApp.tsx           # Root app state (landing vs dashboard)
-│   ├── LandingPage.tsx      # Public landing page
-│   ├── Dashboard.tsx        # Dashboard shell + routing
-│   ├── Sidebar.tsx          # Navigation sidebar
-│   ├── TopBar.tsx           # Top navigation bar
-│   ├── LiveTicker.tsx       # Realtime ticket ticker
-│   ├── ui/
-│   │   ├── index.tsx        # Shared UI primitives
-│   │   └── FilmPoster.tsx   # Film poster component
-│   └── screens/
-│       ├── ProducerOverview.tsx
-│       ├── ProducerFilms.tsx  (alias: FilmsView.tsx)
-│       ├── SubmitFilm.tsx
-│       ├── AnalyticsView.tsx
-│       ├── MarketingView.tsx
-│       ├── ChatView.tsx
-│       ├── CinemaOverview.tsx
-│       ├── AdminOverview.tsx
-│       ├── AdminFilms.tsx
-│       ├── AdminCinemas.tsx
-│       └── AdminReports.tsx
-└── lib/
-    └── data.ts              # All types, demo data, helpers
+│   └── NDPApp.tsx      ← Entire app (self-contained)
+├── public/
+├── next.config.js
+├── tailwind.config.ts
+├── tsconfig.json
+└── package.json
 ```
 
-## Demo Roles
+---
 
-Click the **P / C / A** buttons in the bottom-right corner to switch between:
+## ⚙️ Tech Stack
 
-| Button | Role | Color |
-|--------|------|-------|
-| P | Producer | Red |
-| C | Cinema Manager | Orange |
-| A | Admin / Distributor | Teal |
+- **Next.js 14** (App Router)
+- **TypeScript**
+- **Tailwind CSS**
+- **Google Fonts** (DM Sans + Syne)
+- **Vercel** (zero-config deploy)
 
-Or use the landing page CTAs:
-- **Submit Your Film** → Producer Dashboard
-- **Request Demo** → Admin Dashboard
-- **I'm a Cinema Partner** → Cinema Dashboard
+---
 
-## Demo Data
-
-### Films
-| Title | Genre | Cinemas | Revenue |
-|-------|-------|---------|---------|
-| RED CIRCLE | Thriller | 12 | ₦48.7M |
-| LAGOS NIGHTS | Drama | 8 | ₦29.3M |
-| SHADOWS OF ABUJA | Action | 6 | ₦18.9M |
-
-### Cinemas (10 across 7 cities)
-Lagos · Abuja · Port Harcourt · Enugu · Ibadan · Benin · Calabar
-
-## License
-
-© 2024 Nile Entertainment Group. All rights reserved.
+© 2025 Nile Media Entertainment Group
